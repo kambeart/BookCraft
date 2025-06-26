@@ -38,7 +38,7 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1000, 879)
+        ClientSize = New Size(1366, 768)
         Controls.Add(Button1)
         MaximizeBox = False
         Name = "Form1"
