@@ -40,6 +40,7 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1000, 879)
         Controls.Add(Button1)
+        MaximizeBox = False
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
