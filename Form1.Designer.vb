@@ -28,7 +28,7 @@ Partial Class Form1
         txtPassword = New TextBox()
         btnLogIn = New Button()
         TextBox1 = New TextBox()
-        btnSignIn = New Button()
+        LinkLabel1 = New LinkLabel()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -45,23 +45,25 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(LinkLabel1)
         Panel1.Controls.Add(PictureBox1)
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1366, 343)
+        Panel1.Size = New Size(1348, 768)
         Panel1.TabIndex = 1
         ' 
         ' txtUsername
         ' 
-        txtUsername.BorderStyle = BorderStyle.FixedSingle
+        txtUsername.BorderStyle = BorderStyle.None
         txtUsername.Cursor = Cursors.IBeam
         txtUsername.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtUsername.Location = New Point(457, 349)
         txtUsername.Name = "txtUsername"
-        txtUsername.PlaceholderText = "                                        USERNAME"
-        txtUsername.Size = New Size(401, 27)
+        txtUsername.PlaceholderText = "USERNAME"
+        txtUsername.Size = New Size(401, 20)
         txtUsername.TabIndex = 2
+        txtUsername.TextAlign = HorizontalAlignment.Center
         ' 
         ' txtPassword
         ' 
@@ -69,9 +71,10 @@ Partial Class Form1
         txtPassword.Cursor = Cursors.IBeam
         txtPassword.Location = New Point(457, 403)
         txtPassword.Name = "txtPassword"
-        txtPassword.PlaceholderText = "                                        PASSWORD"
+        txtPassword.PlaceholderText = "PASSWORD"
         txtPassword.Size = New Size(401, 27)
         txtPassword.TabIndex = 3
+        txtPassword.TextAlign = HorizontalAlignment.Center
         ' 
         ' btnLogIn
         ' 
@@ -93,31 +96,27 @@ Partial Class Form1
         TextBox1.Cursor = Cursors.IBeam
         TextBox1.Location = New Point(457, 464)
         TextBox1.Name = "TextBox1"
-        TextBox1.PlaceholderText = "                                     ADMIN PASSKEY"
+        TextBox1.PlaceholderText = "ADMIN PASSKEY"
         TextBox1.Size = New Size(401, 27)
         TextBox1.TabIndex = 5
+        TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
-        ' btnSignIn
+        ' LinkLabel1
         ' 
-        btnSignIn.BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
-        btnSignIn.FlatAppearance.BorderColor = Color.FromArgb(CByte(192), CByte(255), CByte(255))
-        btnSignIn.FlatAppearance.BorderSize = 0
-        btnSignIn.FlatStyle = FlatStyle.Flat
-        btnSignIn.Font = New Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnSignIn.Location = New Point(521, 595)
-        btnSignIn.Name = "btnSignIn"
-        btnSignIn.Size = New Size(287, 29)
-        btnSignIn.TabIndex = 6
-        btnSignIn.Text = "Don't Have an Account? Sign in Here"
-        btnSignIn.UseVisualStyleBackColor = False
+        LinkLabel1.AutoSize = True
+        LinkLabel1.Location = New Point(693, 603)
+        LinkLabel1.Name = "LinkLabel1"
+        LinkLabel1.Size = New Size(79, 20)
+        LinkLabel1.TabIndex = 1
+        LinkLabel1.TabStop = True
+        LinkLabel1.Text = "LinkLabel1"
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
-        ClientSize = New Size(1366, 768)
-        Controls.Add(btnSignIn)
+        ClientSize = New Size(1348, 721)
         Controls.Add(TextBox1)
         Controls.Add(btnLogIn)
         Controls.Add(txtPassword)
@@ -129,6 +128,7 @@ Partial Class Form1
         Text = "Login Page"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -139,6 +139,6 @@ Partial Class Form1
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogIn As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents btnSignIn As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 
 End Class
