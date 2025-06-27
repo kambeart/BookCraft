@@ -28,6 +28,7 @@ Partial Class Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
         ClientSize = New Size(1348, 721)
         Name = "Form2"
         Text = "Form2"
