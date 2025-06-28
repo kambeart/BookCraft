@@ -42,12 +42,11 @@ Partial Class Form2
         Label2 = New Label()
         txtName = New TextBox()
         Label1 = New Label()
-        PictureBox2 = New PictureBox()
         Button1 = New Button()
+        btnBackToLoginPage = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -57,7 +56,7 @@ Partial Class Form2
         Panel1.Dock = DockStyle.Top
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1330, 125)
+        Panel1.Size = New Size(1348, 125)
         Panel1.TabIndex = 0
         ' 
         ' TextBox1
@@ -258,18 +257,6 @@ Partial Class Form2
         Label1.TabIndex = 0
         Label1.Text = "Name:"
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Anchor = AnchorStyles.Bottom Or AnchorStyles.Left
-        PictureBox2.BackColor = Color.Transparent
-        PictureBox2.Image = My.Resources.Resources.right
-        PictureBox2.Location = New Point(39, 621)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(69, 73)
-        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox2.TabIndex = 2
-        PictureBox2.TabStop = False
-        ' 
         ' Button1
         ' 
         Button1.BackColor = Color.SaddleBrown
@@ -284,14 +271,27 @@ Partial Class Form2
         Button1.Text = "Sign Up"
         Button1.UseVisualStyleBackColor = False
         ' 
+        ' btnBackToLoginPage
+        ' 
+        btnBackToLoginPage.BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToLoginPage.BackgroundImageLayout = ImageLayout.Zoom
+        btnBackToLoginPage.FlatAppearance.BorderSize = 0
+        btnBackToLoginPage.FlatStyle = FlatStyle.Flat
+        btnBackToLoginPage.Image = My.Resources.Resources.Adobe_Express___file
+        btnBackToLoginPage.Location = New Point(38, 633)
+        btnBackToLoginPage.Name = "btnBackToLoginPage"
+        btnBackToLoginPage.Size = New Size(71, 76)
+        btnBackToLoginPage.TabIndex = 4
+        btnBackToLoginPage.UseVisualStyleBackColor = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
-        ClientSize = New Size(1330, 721)
+        ClientSize = New Size(1348, 721)
+        Controls.Add(btnBackToLoginPage)
         Controls.Add(Button1)
-        Controls.Add(PictureBox2)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
         Name = "Form2"
@@ -302,7 +302,6 @@ Partial Class Form2
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -326,6 +325,6 @@ Partial Class Form2
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnBackToLoginPage As Button
 End Class
