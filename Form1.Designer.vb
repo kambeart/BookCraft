@@ -24,13 +24,12 @@ Partial Class Form1
     Private Sub InitializeComponent()
         PictureBox1 = New PictureBox()
         Panel1 = New Panel()
-        Label1 = New Label()
-        LinkLabel1 = New LinkLabel()
+        btnSignIn = New Button()
+        btnLogIn = New Button()
+        linkForgotPass = New LinkLabel()
         txtUsername = New TextBox()
         txtPassword = New TextBox()
-        btnLogIn = New Button()
         TextBox1 = New TextBox()
-        btnSignIn = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -48,9 +47,8 @@ Partial Class Form1
         ' Panel1
         ' 
         Panel1.Controls.Add(btnSignIn)
-        Panel1.Controls.Add(Label1)
         Panel1.Controls.Add(btnLogIn)
-        Panel1.Controls.Add(LinkLabel1)
+        Panel1.Controls.Add(linkForgotPass)
         Panel1.Controls.Add(PictureBox1)
         Panel1.Controls.Add(txtUsername)
         Panel1.Dock = DockStyle.Top
@@ -59,24 +57,43 @@ Partial Class Form1
         Panel1.Size = New Size(1348, 768)
         Panel1.TabIndex = 1
         ' 
-        ' Label1
+        ' btnSignIn
         ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(532, 598)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(182, 20)
-        Label1.TabIndex = 2
-        Label1.Text = "Doesn't Have an Account?"
+        btnSignIn.BackColor = Color.FromArgb(CByte(38), CByte(222), CByte(129))
+        btnSignIn.FlatAppearance.BorderSize = 0
+        btnSignIn.FlatAppearance.MouseOverBackColor = Color.Teal
+        btnSignIn.FlatStyle = FlatStyle.Popup
+        btnSignIn.Font = New Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnSignIn.Location = New Point(655, 517)
+        btnSignIn.Name = "btnSignIn"
+        btnSignIn.Size = New Size(128, 50)
+        btnSignIn.TabIndex = 5
+        btnSignIn.Text = "Sign In"
+        btnSignIn.UseVisualStyleBackColor = False
         ' 
-        ' LinkLabel1
+        ' btnLogIn
         ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Location = New Point(710, 598)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(54, 20)
-        LinkLabel1.TabIndex = 1
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Sign In"
+        btnLogIn.BackColor = Color.FromArgb(CByte(38), CByte(222), CByte(129))
+        btnLogIn.FlatAppearance.BorderSize = 0
+        btnLogIn.FlatAppearance.MouseOverBackColor = Color.Teal
+        btnLogIn.FlatStyle = FlatStyle.Popup
+        btnLogIn.Font = New Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnLogIn.Location = New Point(520, 517)
+        btnLogIn.Name = "btnLogIn"
+        btnLogIn.Size = New Size(129, 50)
+        btnLogIn.TabIndex = 4
+        btnLogIn.Text = "Log In"
+        btnLogIn.UseVisualStyleBackColor = False
+        ' 
+        ' linkForgotPass
+        ' 
+        linkForgotPass.AutoSize = True
+        linkForgotPass.Location = New Point(596, 594)
+        linkForgotPass.Name = "linkForgotPass"
+        linkForgotPass.Size = New Size(118, 20)
+        linkForgotPass.TabIndex = 1
+        linkForgotPass.TabStop = True
+        linkForgotPass.Text = "Forgot Password"
         ' 
         ' txtUsername
         ' 
@@ -102,20 +119,6 @@ Partial Class Form1
         txtPassword.TabIndex = 3
         txtPassword.TextAlign = HorizontalAlignment.Center
         ' 
-        ' btnLogIn
-        ' 
-        btnLogIn.BackColor = Color.FromArgb(CByte(38), CByte(222), CByte(129))
-        btnLogIn.FlatAppearance.BorderSize = 0
-        btnLogIn.FlatAppearance.MouseOverBackColor = Color.Teal
-        btnLogIn.FlatStyle = FlatStyle.Popup
-        btnLogIn.Font = New Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnLogIn.Location = New Point(520, 517)
-        btnLogIn.Name = "btnLogIn"
-        btnLogIn.Size = New Size(129, 50)
-        btnLogIn.TabIndex = 4
-        btnLogIn.Text = "Log In"
-        btnLogIn.UseVisualStyleBackColor = False
-        ' 
         ' TextBox1
         ' 
         TextBox1.BorderStyle = BorderStyle.FixedSingle
@@ -126,20 +129,6 @@ Partial Class Form1
         TextBox1.Size = New Size(287, 27)
         TextBox1.TabIndex = 5
         TextBox1.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' btnSignIn
-        ' 
-        btnSignIn.BackColor = Color.FromArgb(CByte(38), CByte(222), CByte(129))
-        btnSignIn.FlatAppearance.BorderSize = 0
-        btnSignIn.FlatAppearance.MouseOverBackColor = Color.Teal
-        btnSignIn.FlatStyle = FlatStyle.Popup
-        btnSignIn.Font = New Font("Calibri", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        btnSignIn.Location = New Point(655, 517)
-        btnSignIn.Name = "btnSignIn"
-        btnSignIn.Size = New Size(128, 50)
-        btnSignIn.TabIndex = 5
-        btnSignIn.Text = "Sign In"
-        btnSignIn.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
@@ -167,8 +156,7 @@ Partial Class Form1
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogIn As Button
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents LinkLabel1 As LinkLabel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents linkForgotPass As LinkLabel
     Friend WithEvents btnSignIn As Button
 
 End Class
