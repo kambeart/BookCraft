@@ -259,7 +259,7 @@ Partial Class Form2
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.SaddleBrown
+        Button1.BackColor = Color.Sienna
         Button1.FlatAppearance.BorderSize = 0
         Button1.FlatStyle = FlatStyle.Flat
         Button1.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
@@ -296,7 +296,7 @@ Partial Class Form2
         Controls.Add(Panel1)
         Name = "Form2"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form2"
+        Text = "Craft Account"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
