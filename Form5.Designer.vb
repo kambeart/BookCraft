@@ -23,12 +23,17 @@ Partial Class Form5
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
-        Label1 = New Label()
         PictureBox1 = New PictureBox()
+        Label1 = New Label()
         Panel2 = New Panel()
         Panel3 = New Panel()
+        TableLayoutPanel1 = New TableLayoutPanel()
+        btnBookMarket = New Button()
+        btnGoToProfile = New Button()
+        btnEbook = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        TableLayoutPanel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
@@ -41,16 +46,6 @@ Partial Class Form5
         Panel1.Size = New Size(1348, 145)
         Panel1.TabIndex = 0
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Times New Roman", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(69, 59)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(284, 46)
-        Label1.TabIndex = 0
-        Label1.Text = "E-Books Section"
-        ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.WhatsApp_Image_2025_05_21_at_18_24_37_f09943ca
@@ -60,6 +55,16 @@ Partial Class Form5
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
         PictureBox1.TabIndex = 2
         PictureBox1.TabStop = False
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Arial Narrow", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(69, 59)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(260, 46)
+        Label1.TabIndex = 0
+        Label1.Text = "E-Books Section"
         ' 
         ' Panel2
         ' 
@@ -76,12 +81,68 @@ Partial Class Form5
         Panel3.Size = New Size(1202, 333)
         Panel3.TabIndex = 2
         ' 
+        ' TableLayoutPanel1
+        ' 
+        TableLayoutPanel1.BackColor = Color.Sienna
+        TableLayoutPanel1.CellBorderStyle = TableLayoutPanelCellBorderStyle.InsetDouble
+        TableLayoutPanel1.ColumnCount = 3
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
+        TableLayoutPanel1.Controls.Add(btnBookMarket, 0, 0)
+        TableLayoutPanel1.Controls.Add(btnGoToProfile, 2, 0)
+        TableLayoutPanel1.Controls.Add(btnEbook, 1, 0)
+        TableLayoutPanel1.Dock = DockStyle.Bottom
+        TableLayoutPanel1.Location = New Point(0, 595)
+        TableLayoutPanel1.Name = "TableLayoutPanel1"
+        TableLayoutPanel1.RowCount = 1
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 100F))
+        TableLayoutPanel1.Size = New Size(1348, 126)
+        TableLayoutPanel1.TabIndex = 3
+        ' 
+        ' btnBookMarket
+        ' 
+        btnBookMarket.Anchor = AnchorStyles.None
+        btnBookMarket.FlatAppearance.BorderSize = 0
+        btnBookMarket.FlatStyle = FlatStyle.Flat
+        btnBookMarket.Image = My.Resources.Resources.book_icon_resize
+        btnBookMarket.Location = New Point(6, 6)
+        btnBookMarket.Name = "btnBookMarket"
+        btnBookMarket.Size = New Size(439, 113)
+        btnBookMarket.TabIndex = 5
+        btnBookMarket.UseVisualStyleBackColor = True
+        ' 
+        ' btnGoToProfile
+        ' 
+        btnGoToProfile.Anchor = AnchorStyles.None
+        btnGoToProfile.FlatAppearance.BorderSize = 0
+        btnGoToProfile.FlatStyle = FlatStyle.Flat
+        btnGoToProfile.Image = My.Resources.Resources.pfp_icon_2_uodated
+        btnGoToProfile.Location = New Point(902, 6)
+        btnGoToProfile.Name = "btnGoToProfile"
+        btnGoToProfile.Size = New Size(440, 113)
+        btnGoToProfile.TabIndex = 2
+        btnGoToProfile.UseVisualStyleBackColor = True
+        ' 
+        ' btnEbook
+        ' 
+        btnEbook.Anchor = AnchorStyles.None
+        btnEbook.FlatAppearance.BorderSize = 0
+        btnEbook.FlatStyle = FlatStyle.Flat
+        btnEbook.Image = My.Resources.Resources.Ebook_Icon_Resize
+        btnEbook.Location = New Point(454, 6)
+        btnEbook.Name = "btnEbook"
+        btnEbook.Size = New Size(439, 113)
+        btnEbook.TabIndex = 4
+        btnEbook.UseVisualStyleBackColor = True
+        ' 
         ' Form5
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
         ClientSize = New Size(1348, 721)
+        Controls.Add(TableLayoutPanel1)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Panel1)
@@ -91,6 +152,7 @@ Partial Class Form5
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        TableLayoutPanel1.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -99,4 +161,8 @@ Partial Class Form5
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents btnGoToProfile As Button
+    Friend WithEvents btnEbook As Button
+    Friend WithEvents btnBookMarket As Button
 End Class

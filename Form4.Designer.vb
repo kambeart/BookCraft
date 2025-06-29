@@ -49,6 +49,7 @@ Partial Class Form4
         llbl_ChangeEmail = New LinkLabel()
         lblEmail = New Label()
         Label2 = New Label()
+        txtEmail = New TextBox()
         Panel6 = New Panel()
         Panel7 = New Panel()
         lblName = New Label()
@@ -57,7 +58,7 @@ Partial Class Form4
         Label7 = New Label()
         Label8 = New Label()
         Panel14 = New Panel()
-        TextBox1 = New TextBox()
+        txtBio = New TextBox()
         btnBackToLoginPage = New Button()
         llblSettings = New LinkLabel()
         llblLogOut = New LinkLabel()
@@ -315,6 +316,7 @@ Partial Class Form4
         Panel9.Controls.Add(llbl_ChangeEmail)
         Panel9.Controls.Add(lblEmail)
         Panel9.Controls.Add(Label2)
+        Panel9.Controls.Add(txtEmail)
         Panel9.Dock = DockStyle.Top
         Panel9.Location = New Point(0, 0)
         Panel9.Name = "Panel9"
@@ -335,11 +337,11 @@ Partial Class Form4
         ' 
         lblEmail.Font = New Font("Times New Roman", 16.2F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         lblEmail.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        lblEmail.Location = New Point(184, 3)
+        lblEmail.Location = New Point(193, 0)
         lblEmail.Name = "lblEmail"
-        lblEmail.Size = New Size(628, 33)
+        lblEmail.Size = New Size(619, 33)
         lblEmail.TabIndex = 3
-        lblEmail.Text = "(Email)"
+        lblEmail.Text = "(Enter an Email"
         lblEmail.Visible = False
         ' 
         ' Label2
@@ -352,6 +354,16 @@ Partial Class Form4
         Label2.Size = New Size(186, 33)
         Label2.TabIndex = 2
         Label2.Text = "Email              :"
+        ' 
+        ' txtEmail
+        ' 
+        txtEmail.BorderStyle = BorderStyle.None
+        txtEmail.Font = New Font("Times New Roman", 16.2F)
+        txtEmail.Location = New Point(184, 0)
+        txtEmail.Name = "txtEmail"
+        txtEmail.Size = New Size(642, 32)
+        txtEmail.TabIndex = 11
+        txtEmail.Visible = False
         ' 
         ' Panel6
         ' 
@@ -425,19 +437,19 @@ Partial Class Form4
         ' Panel14
         ' 
         Panel14.BackColor = Color.White
-        Panel14.Controls.Add(TextBox1)
+        Panel14.Controls.Add(txtBio)
         Panel14.Location = New Point(662, 171)
         Panel14.Name = "Panel14"
         Panel14.Size = New Size(389, 85)
         Panel14.TabIndex = 9
         ' 
-        ' TextBox1
+        ' txtBio
         ' 
-        TextBox1.Location = New Point(0, 0)
-        TextBox1.Multiline = True
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(389, 108)
-        TextBox1.TabIndex = 0
+        txtBio.Location = New Point(0, 0)
+        txtBio.Multiline = True
+        txtBio.Name = "txtBio"
+        txtBio.Size = New Size(389, 108)
+        txtBio.TabIndex = 0
         ' 
         ' btnBackToLoginPage
         ' 
@@ -498,6 +510,7 @@ Partial Class Form4
         Controls.Add(picPFP)
         Controls.Add(Panel1)
         Name = "Form4"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Profile"
         CType(picPFP, ComponentModel.ISupportInitialize).EndInit()
         Panel2.ResumeLayout(False)
@@ -556,8 +569,9 @@ Partial Class Form4
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Panel14 As Panel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtBio As TextBox
     Friend WithEvents btnBackToLoginPage As Button
     Friend WithEvents llblSettings As LinkLabel
     Friend WithEvents llblLogOut As LinkLabel
+    Friend WithEvents txtEmail As TextBox
 End Class

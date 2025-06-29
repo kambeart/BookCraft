@@ -53,8 +53,8 @@ Partial Class Form3
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
-        TableLayoutPanel1.Controls.Add(btnEbook, 1, 0)
         TableLayoutPanel1.Controls.Add(btnGoToProfile, 2, 0)
+        TableLayoutPanel1.Controls.Add(btnEbook, 1, 0)
         TableLayoutPanel1.Controls.Add(btnBookMarket, 0, 0)
         TableLayoutPanel1.Dock = DockStyle.Bottom
         TableLayoutPanel1.Location = New Point(0, 0)
