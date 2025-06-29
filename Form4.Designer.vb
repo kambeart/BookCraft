@@ -456,6 +456,8 @@ Partial Class Form4
         btnBackToLoginPage.BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
         btnBackToLoginPage.BackgroundImageLayout = ImageLayout.Zoom
         btnBackToLoginPage.FlatAppearance.BorderSize = 0
+        btnBackToLoginPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToLoginPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
         btnBackToLoginPage.FlatStyle = FlatStyle.Flat
         btnBackToLoginPage.Image = My.Resources.Resources.Adobe_Express___file
         btnBackToLoginPage.Location = New Point(49, 55)

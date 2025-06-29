@@ -68,7 +68,7 @@ Partial Class Form1
         btnSignIn.Name = "btnSignIn"
         btnSignIn.Size = New Size(128, 50)
         btnSignIn.TabIndex = 5
-        btnSignIn.Text = "Sign In"
+        btnSignIn.Text = "Sign Up"
         btnSignIn.UseVisualStyleBackColor = False
         ' 
         ' btnLogIn

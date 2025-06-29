@@ -115,6 +115,7 @@ Partial Class Form5
         ' btnGoToProfile
         ' 
         btnGoToProfile.Anchor = AnchorStyles.None
+        btnGoToProfile.BackColor = Color.Sienna
         btnGoToProfile.FlatAppearance.BorderSize = 0
         btnGoToProfile.FlatStyle = FlatStyle.Flat
         btnGoToProfile.Image = My.Resources.Resources.pfp_icon_2_uodated
@@ -122,7 +123,7 @@ Partial Class Form5
         btnGoToProfile.Name = "btnGoToProfile"
         btnGoToProfile.Size = New Size(440, 113)
         btnGoToProfile.TabIndex = 2
-        btnGoToProfile.UseVisualStyleBackColor = True
+        btnGoToProfile.UseVisualStyleBackColor = False
         ' 
         ' btnEbook
         ' 
