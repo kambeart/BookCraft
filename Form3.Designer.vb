@@ -25,12 +25,15 @@ Partial Class Form3
         Panel1 = New Panel()
         TableLayoutPanel1 = New TableLayoutPanel()
         btnEbook = New Button()
-        btnBookMarket = New Button()
         btnGoToProfile = New Button()
+        btnBookMarket = New Button()
         Panel2 = New Panel()
+        PictureBox1 = New PictureBox()
         Panel3 = New Panel()
         Panel1.SuspendLayout()
         TableLayoutPanel1.SuspendLayout()
+        Panel2.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -51,8 +54,8 @@ Partial Class Form3
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 33.3333321F))
         TableLayoutPanel1.Controls.Add(btnEbook, 1, 0)
-        TableLayoutPanel1.Controls.Add(btnBookMarket, 0, 0)
         TableLayoutPanel1.Controls.Add(btnGoToProfile, 2, 0)
+        TableLayoutPanel1.Controls.Add(btnBookMarket, 0, 0)
         TableLayoutPanel1.Dock = DockStyle.Bottom
         TableLayoutPanel1.Location = New Point(0, 0)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -73,18 +76,6 @@ Partial Class Form3
         btnEbook.TabIndex = 3
         btnEbook.UseVisualStyleBackColor = True
         ' 
-        ' btnBookMarket
-        ' 
-        btnBookMarket.Anchor = AnchorStyles.None
-        btnBookMarket.FlatAppearance.BorderSize = 0
-        btnBookMarket.FlatStyle = FlatStyle.Flat
-        btnBookMarket.Image = My.Resources.Resources.book_icon_resize
-        btnBookMarket.Location = New Point(6, 6)
-        btnBookMarket.Name = "btnBookMarket"
-        btnBookMarket.Size = New Size(439, 113)
-        btnBookMarket.TabIndex = 2
-        btnBookMarket.UseVisualStyleBackColor = True
-        ' 
         ' btnGoToProfile
         ' 
         btnGoToProfile.Anchor = AnchorStyles.None
@@ -97,20 +88,43 @@ Partial Class Form3
         btnGoToProfile.TabIndex = 1
         btnGoToProfile.UseVisualStyleBackColor = True
         ' 
+        ' btnBookMarket
+        ' 
+        btnBookMarket.Anchor = AnchorStyles.None
+        btnBookMarket.FlatAppearance.BorderSize = 0
+        btnBookMarket.FlatStyle = FlatStyle.Flat
+        btnBookMarket.Image = My.Resources.Resources.book_icon_resize
+        btnBookMarket.Location = New Point(6, 6)
+        btnBookMarket.Name = "btnBookMarket"
+        btnBookMarket.Size = New Size(439, 113)
+        btnBookMarket.TabIndex = 2
+        btnBookMarket.UseVisualStyleBackColor = True
+        ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(PictureBox1)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1348, 83)
         Panel2.TabIndex = 1
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.WhatsApp_Image_2025_05_21_at_18_24_37_f09943ca
+        PictureBox1.Location = New Point(1240, 0)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(108, 95)
+        PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox1.TabIndex = 1
+        PictureBox1.TabStop = False
+        ' 
         ' Panel3
         ' 
-        Panel3.Dock = DockStyle.Fill
-        Panel3.Location = New Point(0, 83)
+        Panel3.AutoScroll = True
+        Panel3.Location = New Point(97, 119)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(1348, 513)
+        Panel3.Size = New Size(1211, 396)
         Panel3.TabIndex = 2
         ' 
         ' Form3
@@ -127,6 +141,8 @@ Partial Class Form3
         Text = "Main Menu"
         Panel1.ResumeLayout(False)
         TableLayoutPanel1.ResumeLayout(False)
+        Panel2.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -137,4 +153,5 @@ Partial Class Form3
     Friend WithEvents btnBookMarket As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
