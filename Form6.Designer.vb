@@ -23,6 +23,7 @@ Partial Class Form6
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        Label6 = New Label()
         btnBackToMainMenu = New Button()
         Panel2 = New Panel()
         Label4 = New Label()
@@ -35,7 +36,6 @@ Partial Class Form6
         lblPrice = New Label()
         Label5 = New Label()
         btnClearList = New Button()
-        Label6 = New Label()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel4.SuspendLayout()
@@ -50,6 +50,17 @@ Partial Class Form6
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1291, 81)
         Panel1.TabIndex = 0
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Arial Narrow", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        Label6.Location = New Point(135, 19)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(228, 46)
+        Label6.TabIndex = 7
+        Label6.Text = "Shopping Cart"
         ' 
         ' btnBackToMainMenu
         ' 
@@ -203,17 +214,6 @@ Partial Class Form6
         btnClearList.TabIndex = 0
         btnClearList.Text = "Clear List"
         btnClearList.UseVisualStyleBackColor = False
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Arial Narrow", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label6.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        Label6.Location = New Point(135, 19)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(228, 46)
-        Label6.TabIndex = 7
-        Label6.Text = "Shopping Cart"
         ' 
         ' Form6
         ' 
