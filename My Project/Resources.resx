@@ -118,40 +118,70 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Ebook Icon Resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ebook Icon Resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="right small-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\right small-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="pfp icon 2 uodated" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pfp icon 2 uodated.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="right small" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\right small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="book icon resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\book icon resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Pfp Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pfp Icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Adobe Express - file" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Adobe Express - file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WhatsApp Image 2025-05-21 at 18.24.37_f09943ca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Image 2025-05-21 at 18.24.37_f09943ca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CImb Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CImb Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pfp icon 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pfp icon 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pfp Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pfp Icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Qr Payment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Qr Payment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maybank Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maybank Icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TNG ICON1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TNG ICON1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pfp icon 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pfp icon 21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WhatsApp Image 2025-05-21 at 18.24.37_f09943ca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Image 2025-05-21 at 18.24.37_f09943ca.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pfp Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pfp Icon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TNG ICON" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TNG ICON.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-icon-illustration-free-vector resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-icon-illustration-free-vector resize.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shopping-cart-icon-illustration-free-vector resize-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shopping-cart-icon-illustration-free-vector resize-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ebook Icon Resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ebook Icon Resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adobe Express - file" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adobe Express - file.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pfp icon 2 uodated" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pfp icon 2 uodated.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pfp Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pfp Icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="book icon resize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book icon resize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maybank Icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maybank Icon2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right small-Photoroom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right small-Photoroom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="right small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Maybank Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Maybank Icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Card Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Card Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

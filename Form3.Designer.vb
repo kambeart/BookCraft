@@ -24,12 +24,13 @@ Partial Class Form3
     Private Sub InitializeComponent()
         Panel1 = New Panel()
         TableLayoutPanel1 = New TableLayoutPanel()
-        btnEbook = New Button()
         btnGoToProfile = New Button()
+        btnEbook = New Button()
         btnBookMarket = New Button()
         Panel2 = New Panel()
         PictureBox1 = New PictureBox()
         Panel3 = New Panel()
+        btnBackToShoppingCart = New Button()
         Panel1.SuspendLayout()
         TableLayoutPanel1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -64,18 +65,6 @@ Partial Class Form3
         TableLayoutPanel1.Size = New Size(1348, 125)
         TableLayoutPanel1.TabIndex = 1
         ' 
-        ' btnEbook
-        ' 
-        btnEbook.Anchor = AnchorStyles.None
-        btnEbook.FlatAppearance.BorderSize = 0
-        btnEbook.FlatStyle = FlatStyle.Flat
-        btnEbook.Image = My.Resources.Resources.Ebook_Icon_Resize
-        btnEbook.Location = New Point(454, 6)
-        btnEbook.Name = "btnEbook"
-        btnEbook.Size = New Size(439, 113)
-        btnEbook.TabIndex = 3
-        btnEbook.UseVisualStyleBackColor = True
-        ' 
         ' btnGoToProfile
         ' 
         btnGoToProfile.Anchor = AnchorStyles.None
@@ -87,6 +76,18 @@ Partial Class Form3
         btnGoToProfile.Size = New Size(440, 113)
         btnGoToProfile.TabIndex = 1
         btnGoToProfile.UseVisualStyleBackColor = True
+        ' 
+        ' btnEbook
+        ' 
+        btnEbook.Anchor = AnchorStyles.None
+        btnEbook.FlatAppearance.BorderSize = 0
+        btnEbook.FlatStyle = FlatStyle.Flat
+        btnEbook.Image = My.Resources.Resources.Ebook_Icon_Resize
+        btnEbook.Location = New Point(454, 6)
+        btnEbook.Name = "btnEbook"
+        btnEbook.Size = New Size(439, 113)
+        btnEbook.TabIndex = 3
+        btnEbook.UseVisualStyleBackColor = True
         ' 
         ' btnBookMarket
         ' 
@@ -102,6 +103,7 @@ Partial Class Form3
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(btnBackToShoppingCart)
         Panel2.Controls.Add(PictureBox1)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(0, 0)
@@ -126,6 +128,21 @@ Partial Class Form3
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(1211, 396)
         Panel3.TabIndex = 2
+        ' 
+        ' btnBackToShoppingCart
+        ' 
+        btnBackToShoppingCart.BackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToShoppingCart.BackgroundImageLayout = ImageLayout.Zoom
+        btnBackToShoppingCart.FlatAppearance.BorderSize = 0
+        btnBackToShoppingCart.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToShoppingCart.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToShoppingCart.FlatStyle = FlatStyle.Flat
+        btnBackToShoppingCart.Image = My.Resources.Resources.shopping_cart_icon_illustration_free_vector_resize_Photoroom
+        btnBackToShoppingCart.Location = New Point(1041, 9)
+        btnBackToShoppingCart.Name = "btnBackToShoppingCart"
+        btnBackToShoppingCart.Size = New Size(78, 71)
+        btnBackToShoppingCart.TabIndex = 7
+        btnBackToShoppingCart.UseVisualStyleBackColor = False
         ' 
         ' Form3
         ' 
@@ -154,4 +171,5 @@ Partial Class Form3
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnBackToShoppingCart As Button
 End Class

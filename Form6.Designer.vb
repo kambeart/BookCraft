@@ -23,17 +23,20 @@ Partial Class Form6
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        btnBackToMainMenu = New Button()
         Panel2 = New Panel()
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
         Label4 = New Label()
+        Label3 = New Label()
+        Label2 = New Label()
+        Label1 = New Label()
         Panel3 = New Panel()
         Panel4 = New Panel()
-        btnClearList = New Button()
-        Label5 = New Label()
+        btnCheckOut = New Button()
         lblPrice = New Label()
-        Button1 = New Button()
+        Label5 = New Label()
+        btnClearList = New Button()
+        Label6 = New Label()
+        Panel1.SuspendLayout()
         Panel2.SuspendLayout()
         Panel4.SuspendLayout()
         SuspendLayout()
@@ -41,10 +44,27 @@ Partial Class Form6
         ' Panel1
         ' 
         Panel1.BackColor = Color.White
+        Panel1.Controls.Add(Label6)
+        Panel1.Controls.Add(btnBackToMainMenu)
         Panel1.Location = New Point(28, 28)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1291, 81)
         Panel1.TabIndex = 0
+        ' 
+        ' btnBackToMainMenu
+        ' 
+        btnBackToMainMenu.BackColor = Color.White
+        btnBackToMainMenu.BackgroundImageLayout = ImageLayout.Zoom
+        btnBackToMainMenu.FlatAppearance.BorderSize = 0
+        btnBackToMainMenu.FlatAppearance.MouseDownBackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToMainMenu.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(210), CByte(227), CByte(188))
+        btnBackToMainMenu.FlatStyle = FlatStyle.Flat
+        btnBackToMainMenu.Image = My.Resources.Resources.Adobe_Express___file
+        btnBackToMainMenu.Location = New Point(3, 3)
+        btnBackToMainMenu.Name = "btnBackToMainMenu"
+        btnBackToMainMenu.Size = New Size(78, 71)
+        btnBackToMainMenu.TabIndex = 6
+        btnBackToMainMenu.UseVisualStyleBackColor = False
         ' 
         ' Panel2
         ' 
@@ -57,45 +77,6 @@ Partial Class Form6
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1291, 41)
         Panel2.TabIndex = 1
-        ' 
-        ' Label1
-        ' 
-        Label1.Anchor = AnchorStyles.None
-        Label1.AutoSize = True
-        Label1.BackColor = Color.White
-        Label1.Font = New Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        Label1.Location = New Point(51, 3)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(83, 35)
-        Label1.TabIndex = 1
-        Label1.Text = "Books"
-        ' 
-        ' Label2
-        ' 
-        Label2.Anchor = AnchorStyles.None
-        Label2.AutoSize = True
-        Label2.BackColor = Color.White
-        Label2.Font = New Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        Label2.Location = New Point(604, 3)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(121, 35)
-        Label2.TabIndex = 2
-        Label2.Text = "Unit Price"
-        ' 
-        ' Label3
-        ' 
-        Label3.Anchor = AnchorStyles.None
-        Label3.AutoSize = True
-        Label3.BackColor = Color.White
-        Label3.Font = New Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label3.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        Label3.Location = New Point(819, 3)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(107, 35)
-        Label3.TabIndex = 2
-        Label3.Text = "Quantity"
         ' 
         ' Label4
         ' 
@@ -110,6 +91,45 @@ Partial Class Form6
         Label4.TabIndex = 2
         Label4.Text = "Total Price"
         ' 
+        ' Label3
+        ' 
+        Label3.Anchor = AnchorStyles.None
+        Label3.AutoSize = True
+        Label3.BackColor = Color.White
+        Label3.Font = New Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        Label3.Location = New Point(819, 3)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(107, 35)
+        Label3.TabIndex = 2
+        Label3.Text = "Quantity"
+        ' 
+        ' Label2
+        ' 
+        Label2.Anchor = AnchorStyles.None
+        Label2.AutoSize = True
+        Label2.BackColor = Color.White
+        Label2.Font = New Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        Label2.Location = New Point(604, 3)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(121, 35)
+        Label2.TabIndex = 2
+        Label2.Text = "Unit Price"
+        ' 
+        ' Label1
+        ' 
+        Label1.Anchor = AnchorStyles.None
+        Label1.AutoSize = True
+        Label1.BackColor = Color.White
+        Label1.Font = New Font("Arial Narrow", 18F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        Label1.Location = New Point(51, 3)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(83, 35)
+        Label1.TabIndex = 1
+        Label1.Text = "Books"
+        ' 
         ' Panel3
         ' 
         Panel3.BackColor = Color.White
@@ -121,7 +141,7 @@ Partial Class Form6
         ' Panel4
         ' 
         Panel4.BackColor = Color.White
-        Panel4.Controls.Add(Button1)
+        Panel4.Controls.Add(btnCheckOut)
         Panel4.Controls.Add(lblPrice)
         Panel4.Controls.Add(Label5)
         Panel4.Controls.Add(btnClearList)
@@ -129,6 +149,46 @@ Partial Class Form6
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1291, 57)
         Panel4.TabIndex = 1
+        ' 
+        ' btnCheckOut
+        ' 
+        btnCheckOut.BackColor = Color.Sienna
+        btnCheckOut.FlatAppearance.BorderSize = 0
+        btnCheckOut.FlatStyle = FlatStyle.Flat
+        btnCheckOut.Font = New Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        btnCheckOut.ForeColor = Color.White
+        btnCheckOut.Location = New Point(1132, 10)
+        btnCheckOut.Name = "btnCheckOut"
+        btnCheckOut.Size = New Size(112, 39)
+        btnCheckOut.TabIndex = 5
+        btnCheckOut.Text = "Check Out"
+        btnCheckOut.UseVisualStyleBackColor = False
+        ' 
+        ' lblPrice
+        ' 
+        lblPrice.Anchor = AnchorStyles.None
+        lblPrice.AutoSize = True
+        lblPrice.BackColor = Color.White
+        lblPrice.Font = New Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblPrice.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        lblPrice.Location = New Point(1038, 15)
+        lblPrice.Name = "lblPrice"
+        lblPrice.Size = New Size(63, 27)
+        lblPrice.TabIndex = 4
+        lblPrice.Text = "(price)"
+        ' 
+        ' Label5
+        ' 
+        Label5.Anchor = AnchorStyles.None
+        Label5.AutoSize = True
+        Label5.BackColor = Color.White
+        Label5.Font = New Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label5.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        Label5.Location = New Point(969, 16)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(63, 27)
+        Label5.TabIndex = 3
+        Label5.Text = "Total :"
         ' 
         ' btnClearList
         ' 
@@ -144,45 +204,16 @@ Partial Class Form6
         btnClearList.Text = "Clear List"
         btnClearList.UseVisualStyleBackColor = False
         ' 
-        ' Label5
+        ' Label6
         ' 
-        Label5.Anchor = AnchorStyles.None
-        Label5.AutoSize = True
-        Label5.BackColor = Color.White
-        Label5.Font = New Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        Label5.Location = New Point(969, 16)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(63, 27)
-        Label5.TabIndex = 3
-        Label5.Text = "Total :"
-        ' 
-        ' lblPrice
-        ' 
-        lblPrice.Anchor = AnchorStyles.None
-        lblPrice.AutoSize = True
-        lblPrice.BackColor = Color.White
-        lblPrice.Font = New Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblPrice.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
-        lblPrice.Location = New Point(1038, 15)
-        lblPrice.Name = "lblPrice"
-        lblPrice.Size = New Size(63, 27)
-        lblPrice.TabIndex = 4
-        lblPrice.Text = "(price)"
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.Sienna
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.Font = New Font("Arial Narrow", 13.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button1.ForeColor = Color.White
-        Button1.Location = New Point(1132, 10)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(112, 39)
-        Button1.TabIndex = 5
-        Button1.Text = "Check Out"
-        Button1.UseVisualStyleBackColor = False
+        Label6.AutoSize = True
+        Label6.Font = New Font("Arial Narrow", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label6.ForeColor = Color.FromArgb(CByte(128), CByte(64), CByte(0))
+        Label6.Location = New Point(135, 19)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(228, 46)
+        Label6.TabIndex = 7
+        Label6.Text = "Shopping Cart"
         ' 
         ' Form6
         ' 
@@ -196,7 +227,9 @@ Partial Class Form6
         Controls.Add(Panel1)
         Name = "Form6"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form6"
+        Text = "Shopping Cart"
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
         Panel4.ResumeLayout(False)
@@ -215,5 +248,7 @@ Partial Class Form6
     Friend WithEvents btnClearList As Button
     Friend WithEvents lblPrice As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnCheckOut As Button
+    Friend WithEvents btnBackToMainMenu As Button
+    Friend WithEvents Label6 As Label
 End Class
