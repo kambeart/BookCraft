@@ -30,6 +30,8 @@ Partial Class Form1
         txtUsername = New TextBox()
         txtPassword = New TextBox()
         TextBox1 = New TextBox()
+        Panel2 = New Panel()
+        Button1 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel1.SuspendLayout()
         SuspendLayout()
@@ -46,6 +48,8 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
+        Panel1.Controls.Add(Button1)
+        Panel1.Controls.Add(Panel2)
         Panel1.Controls.Add(btnSignIn)
         Panel1.Controls.Add(btnLogIn)
         Panel1.Controls.Add(linkForgotPass)
@@ -130,6 +134,24 @@ Partial Class Form1
         TextBox1.TabIndex = 5
         TextBox1.TextAlign = HorizontalAlignment.Center
         ' 
+        ' Panel2
+        ' 
+        Panel2.Dock = DockStyle.Top
+        Panel2.Location = New Point(0, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1348, 34)
+        Panel2.TabIndex = 6
+        ' 
+        ' Button1
+        ' 
+        Button1.FlatStyle = FlatStyle.Popup
+        Button1.Image = My.Resources.Resources._75519_icon_size_15_removebg_preview
+        Button1.Location = New Point(1311, 0)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(37, 34)
+        Button1.TabIndex = 7
+        Button1.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -158,5 +180,7 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents linkForgotPass As LinkLabel
     Friend WithEvents btnSignIn As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button1 As Button
 
 End Class
