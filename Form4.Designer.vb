@@ -445,6 +445,7 @@ Partial Class Form4
         ' 
         ' txtBio
         ' 
+        txtBio.Font = New Font("Arial Narrow", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtBio.Location = New Point(0, 0)
         txtBio.Multiline = True
         txtBio.Name = "txtBio"
